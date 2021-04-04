@@ -1,12 +1,11 @@
 package com.kenuiworks.frameworkbox.controller;
 
-import com.kenuiworks.frameworkbox.domain.Genre;
 import com.kenuiworks.frameworkbox.dto.FrameworkDTO;
 import com.kenuiworks.frameworkbox.dto.MonthOfExperienceDTO;
 import com.kenuiworks.frameworkbox.exception.FrameworkAlreadyRegisteredException;
 import com.kenuiworks.frameworkbox.exception.FrameworkNotFoundException;
 import com.kenuiworks.frameworkbox.model.Framework;
-import com.kenuiworks.frameworkbox.service.FrameWorkService;
+import com.kenuiworks.frameworkbox.service.FrameworkService;
 import io.micronaut.http.HttpResponse;
 import io.micronaut.http.annotation.*;
 import io.micronaut.scheduling.TaskExecutors;
@@ -20,9 +19,9 @@ import java.util.List;
 @Controller("/api/v1/frameworks")
 public class FrameworkController {
 
-    protected final FrameWorkService service;
+    protected final FrameworkService service;
 
-    public FrameworkController(FrameWorkService service) {
+    public FrameworkController(FrameworkService service) {
         this.service = service;
     }
 

@@ -1,6 +1,5 @@
 package com.kenuiworks.frameworkbox.repository;
 
-import com.kenuiworks.frameworkbox.domain.Genre;
 import com.kenuiworks.frameworkbox.exception.FrameworkNotFoundException;
 import com.kenuiworks.frameworkbox.model.Framework;
 import io.micronaut.transaction.annotation.ReadOnly;
@@ -8,8 +7,6 @@ import io.micronaut.transaction.annotation.ReadOnly;
 import javax.inject.Singleton;
 import javax.persistence.EntityManager;
 import javax.persistence.Query;
-import javax.transaction.Transactional;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 

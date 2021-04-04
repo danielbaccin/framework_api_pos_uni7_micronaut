@@ -8,7 +8,7 @@ import io.micronaut.http.HttpResponse;
 
 import java.util.List;
 
-public interface FrameWorkService {
+public interface FrameworkService {
 
     public FrameworkDTO createFramework(FrameworkDTO frameworkDTO);
 
